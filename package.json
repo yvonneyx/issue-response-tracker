@@ -1,0 +1,35 @@
+{
+  "name": "issue-response-tracker-action",
+  "version": "1.0.0",
+  "description": "A GitHub Action that automatically tracks issue response status by managing labels.",
+  "main": "./dist/index.js",
+  "scripts": {
+    "build": "esbuild src/index.js --bundle --minify --platform=node --outfile=dist/index.js --minify-identifiers=false --minify-syntax=false --minify-whitespace=false"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yvonneyx/issue-response-tracker-action.git"
+  },
+  "keywords": [
+    "github",
+    "action",
+    "issue",
+    "response",
+    "tracker"
+  ],
+  "author": "yvonneyx",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yvonneyx/issue-response-tracker-action/issues"
+  },
+  "homepage": "https://github.com/yvonneyx/issue-response-tracker-action#readme",
+  "dependencies": {
+    "@actions/core": "^1.10.1",
+    "@actions/github": "^6.0.0",
+    "@octokit/rest": "^21.0.2"
+  },
+  "devDependencies": {
+    "dotenv": "^16.4.5",
+    "esbuild": "^0.23.1"
+  }
+}
